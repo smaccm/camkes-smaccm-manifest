@@ -41,11 +41,10 @@
     <project name="camkes-tool.git" path="tools/camkes" revision="dev_hyp" remote="smaccm"/>
     <project name="capDL-tool.git" path="tools/capDL"/>
     <project name="python-capdl-tool.git" path="tools/python-capdl" revision="dev_hyp" remote="smaccm"/>
-    <project name="pruner.git" path="tools/pruner" remote="smaccm"/>
 
     <project name="libmuslc.git" path="libs/libmuslc"/>
     <project name="libsel4muslcsys.git" path="libs/libsel4muslcsys" revision="master"/>
-    <project name="libsel4muslcsys.git" path="libs/libsel4muslccamkes" revision="camkes" remote="smaccm"/>
+    <project name="libsel4muslcsys.git" path="libs/libsel4muslccamkes" revision="camkes"/>
     <project name="libsel4platsupport.git" path="libs/libsel4platsupport"/>
     <project name="libplatsupport.git" path="libs/libplatsupport"/>
     <project name="libcpio.git" path="libs/libcpio"/>
@@ -60,10 +59,7 @@
     <project name="libsel4simple-default.git" path="libs/libsel4simple-default"/>
     <project name="libsel4bench.git" path="libs/libsel4bench"/>
 
-    <project name="libsel4bga.git" path="libs/libsel4bga" remote="smaccm"/>
     <project name="libsel4dma.git" path="libs/libsel4dma" remote="smaccm"/>
-    <project name="libsel4keyboard.git" path="libs/libsel4keyboard" remoe="smaccm"/>
-    <project name="libringbuffer.git" path="libs/libringbuffer" remote="smaccm"/>
 
     <project name="camkes.git" path="projects/camkes" revision="smaccm" remote="smaccm">
         <!-- symlinks to make the project structure fit the build system -->
