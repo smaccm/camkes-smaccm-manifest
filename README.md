@@ -22,3 +22,8 @@ Prerequisites, in addition to a standard build system for your target, are:
 * Python
 * Python libraries python-tempita, pyelftools, jinja2 and ply
 * which, realpath and the libxml2 utilities.
+
+For more specific instructions about checking ut and building CAmkES form this repository see [INSTALL.md](INSTALL.md).
+
+For instructions about building for, and running on, the Odroid-XU see [HARDWARE.md](HARDWARE.md)
+
