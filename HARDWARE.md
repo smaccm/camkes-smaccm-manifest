@@ -54,7 +54,7 @@ If you need to (re)configure from within minicom these settings are:
 
 The Odroid-XU seL4 kernel requires an updated u-boot bootloader on the hardware.  You will have to reflash a new image before you run on the Odroid-XU.
 
-Use the provided bl2 and u-boot images.
+Use the provided bl2 and u-boot images (Note: we don't provide these on github. Use the ones we provided privately earlier, or look at the [instructions](http://forum.odroid.com/viewtopic.php?f=64&t=2778&sid=be659cc75c16e1ecf436075e3c548003&start=60#p33805) to rebuild yourself).
 
  * bl2: `odroid/smdk5410-spl.bin.signed`
  * u-boot: `odroid/u-boot.bin`
