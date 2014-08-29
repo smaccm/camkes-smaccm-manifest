@@ -69,6 +69,7 @@
     <project name="libsel4bga.git" path="libs/libsel4bga"/>
     <project name="libsel4keyboard.git" path="libs/libsel4keyboard"/>
     <project name="libringbuffer.git" path="libs/libringbuffer"/>
+    <project name="libredis.git" path="libs/libredis"/>
 
     <project name="camkes.git" path="projects/camkes" revision="development">
         <!-- symlinks to make the project structure fit the build system -->
