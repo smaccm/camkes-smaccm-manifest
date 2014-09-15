@@ -15,7 +15,7 @@
 
 	make clean
 	make arm_simple_defconfig
-	make silendtoldconfig
+	make silentoldconfig
 	make
 
 ## 3. [Run](#run) on qemu
