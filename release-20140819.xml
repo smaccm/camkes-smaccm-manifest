@@ -64,7 +64,7 @@
   <project name="libsel4debug.git" path="libs/libsel4debug" revision="073f53b00bc7d2e66b5496b8d213f2dbd5d62d86" upstream="master"/>
   <project name="libsel4dma.git" path="libs/libsel4dma" remote="smaccm" revision="074ef75139afeae58feab6e6d62e3e5464ff1902" upstream="master"/>
   <project name="libsel4muslcsys.git" path="libs/libsel4muslcsys" revision="bfd7994d4216e41a6665d26e3b07691b8b2abe70" upstream="master"/>
-  <project name="libsel4muslcsys.git" path="libs/libsel4muslccamkes" revision="bfd7994d4216e41a6665d26e3b07691b8b2abe70" upstream="camkes"/>
+  <project name="libsel4muslcsys.git" path="libs/libsel4muslccamkes" revision="f85783f9f13fad885adbdf8b35261c1d7218fbf5" upstream="camkes"/>
   <project name="libsel4platsupport.git" path="libs/libsel4platsupport" revision="cedc0561619395add9c0f3abcb2cb0d7a7b72677" upstream="master"/>
   <project name="libsel4simple-default.git" path="libs/libsel4simple-default" revision="e3c4fd27fb3d675fefe4aa32274c7f1c48e7d4a2" upstream="master"/>
   <project name="libsel4simple.git" path="libs/libsel4simple" revision="7f60b9be2673520ec71a5c270a7726286a5f93d0" upstream="master"/>
