@@ -10,6 +10,10 @@ systems that can be studied, and individually built and run.
 
 This is a version of CAmkES that has some smaccm specific features and code.  Much of it comes from the public repositories at https://github.com/seL4 but some comes from repositories hosted at https://github.com/smaccm.
 
+For specific instructions about checking out and building CAmkES from this repository see [INSTALL.md](INSTALL.md).
+
+For instructions about building for, and running on, the Odroid-XU see [HARDWARE.md](HARDWARE.md)
+
 For general instructions on how to use this repository, see [sel4.systems](http://sel4.systems/Download/building).
 
 For general information about CAmkES see [the CAmkES pages on seL4.systems](http://sel4.systems/CAmkES).
@@ -23,7 +27,4 @@ Prerequisites, in addition to a standard build system for your target, are:
 * Python libraries python-tempita, pyelftools, jinja2 and ply
 * which, realpath and the libxml2 utilities.
 
-For more specific instructions about checking ut and building CAmkES form this repository see [INSTALL.md](INSTALL.md).
-
-For instructions about building for, and running on, the Odroid-XU see [HARDWARE.md](HARDWARE.md)
 
