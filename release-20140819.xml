@@ -1,0 +1,79 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+     Copyright 2014, NICTA
+
+     This software may be distributed and modified according to the terms of
+     the BSD 2-Clause license. Note that NO WARRANTY is provided.
+     See "LICENSE_BSD2.txt" for details.
+
+     @TAG(NICTA_BSD)
+  -->
+
+
+<manifest>
+  <remote fetch="https://github.com/seL4/" name="seL4"/>
+  <remote fetch="." name="smaccm"/>
+  
+  <default remote="seL4" revision="master"/>
+  
+  <project name="camkes-apps-DARPA--devel.git" path="apps/DARPA" remote="smaccm" revision="e314439b572bcf0327531050538ccb272286b861" upstream="master"/>
+  <project name="camkes-apps-dataport--devel.git" path="apps/dataport" revision="c5f0afbe0fe90b6c7a576888f2ee14303b2b518b" upstream="master"/>
+  <project name="camkes-apps-event--devel.git" path="apps/event" revision="2e7585e82d16d6b5b02413040817df48d8620633" upstream="master"/>
+  <project name="camkes-apps-simple--devel.git" path="apps/simple" revision="788f3b9f76fa1c0d590a409a055bb53ddc95755f" upstream="master"/>
+  <project name="camkes-tool.git" path="tools/camkes" remote="smaccm" revision="24ecbb72e47afe4b6e236ac531fae435f5839836" upstream="dev_hyp"/>
+  <project name="camkes.git" path="projects/camkes" remote="smaccm" revision="d877f97dde4b2f418bc2aa182b943fead9725503" upstream="smaccm">
+    <linkfile dest="Makefile" src="Makefile"/>
+    <linkfile dest="Kbuild" src="Kbuild"/>
+    <linkfile dest="Kconfig" src="Kconfig"/>
+    <linkfile dest="configs" src="configs"/>
+    <linkfile dest="README.md" src="../../tools/camkes/docs/index.md"/>
+    <linkfile dest="tests" src="tests"/>
+    <linkfile dest="libs/libsel4" src="../../kernel/libsel4"/>
+    <linkfile dest="libs/libsel4camkes" src="../../tools/camkes/libsel4camkes"/>
+    <linkfile dest="compile_all.sh" src="compile_all.sh"/>
+    <linkfile dest="apps/adder" src="apps/adder"/>
+    <linkfile dest="apps/dma-example" src="apps/dma-example"/>
+    <linkfile dest="apps/epit" src="apps/epit"/>
+    <linkfile dest="apps/exchangestring" src="apps/exchangestring"/>
+    <linkfile dest="apps/filter" src="apps/filter"/>
+    <linkfile dest="apps/keyboard" src="apps/keyboard"/>
+    <linkfile dest="apps/lockserver" src="apps/lockserver"/>
+    <linkfile dest="apps/multiclient" src="apps/multiclient"/>
+    <linkfile dest="apps/multiplier" src="apps/multiplier"/>
+    <linkfile dest="apps/mutex" src="apps/mutex"/>
+    <linkfile dest="apps/oneplacebuffer" src="apps/oneplacebuffer"/>
+    <linkfile dest="apps/prodcons" src="apps/prodcons"/>
+    <linkfile dest="apps/rotate" src="apps/rotate"/>
+    <linkfile dest="apps/socket" src="apps/socket"/>
+    <linkfile dest="apps/terminal" src="apps/terminal"/>
+    <linkfile dest="apps/testrpccall" src="apps/testrpccall"/>
+    <linkfile dest="apps/testrpcthreadsafe" src="apps/testrpcthreadsafe"/>
+    <linkfile dest="apps/uart" src="apps/uart"/>
+  </project>
+  <project name="capDL-tool.git" path="tools/capDL" revision="09707e42a8ab5f13c1489e1f1a0629386bb6a3dc" upstream="master"/>
+  <project name="capdl-loader-app.git" path="apps/capdl-loader-experimental" revision="bcbf4b9d5e21761780e6f382dc8ddcdccf9e4831" upstream="master"/>
+  <project name="common-tool.git" path="tools/common" revision="7c8c863430e5ab73d6095fdbc3ed62ee190e36e8" upstream="master"/>
+  <project name="elfloader-tool.git" path="tools/elfloader" revision="0786cd6f32068891f7b943f32608cd11ad195a2e" upstream="master"/>
+  <project name="kbuild-tool.git" path="tools/kbuild" revision="820f7efb4fbceeb1d0223f48f34dacfe8378cfdb" upstream="master"/>
+  <project name="libcpio.git" path="libs/libcpio" revision="e0c1c9a0841b99277dea467d50bd2e83ad7a6989" upstream="master"/>
+  <project name="libelf.git" path="libs/libelf" revision="34b957883b281e6b32f2fa5bb19198306a77dda7" upstream="master"/>
+  <project name="libmuslc.git" path="libs/libmuslc" revision="a576a98790b9280564daf0ca2defe98c67b6f48c" upstream="master"/>
+  <project name="libplatsupport.git" path="libs/libplatsupport" revision="9e61dcaafe0e4d33b2ed9fc1023cbffefccfbb18" upstream="master"/>
+  <project name="libsel4bench.git" path="libs/libsel4bench" revision="d06f2e0600290542bd1099fa817cc15f6c454310" upstream="master"/>
+  <project name="libsel4debug.git" path="libs/libsel4debug" revision="073f53b00bc7d2e66b5496b8d213f2dbd5d62d86" upstream="master"/>
+  <project name="libsel4dma.git" path="libs/libsel4dma" remote="smaccm" revision="074ef75139afeae58feab6e6d62e3e5464ff1902" upstream="master"/>
+  <project name="libsel4muslcsys.git" path="libs/libsel4muslcsys" revision="bfd7994d4216e41a6665d26e3b07691b8b2abe70" upstream="master"/>
+  <project name="libsel4muslcsys.git" path="libs/libsel4muslccamkes" revision="bfd7994d4216e41a6665d26e3b07691b8b2abe70" upstream="camkes"/>
+  <project name="libsel4platsupport.git" path="libs/libsel4platsupport" revision="cedc0561619395add9c0f3abcb2cb0d7a7b72677" upstream="master"/>
+  <project name="libsel4simple-default.git" path="libs/libsel4simple-default" revision="e3c4fd27fb3d675fefe4aa32274c7f1c48e7d4a2" upstream="master"/>
+  <project name="libsel4simple.git" path="libs/libsel4simple" revision="7f60b9be2673520ec71a5c270a7726286a5f93d0" upstream="master"/>
+  <project name="libsel4sync.git" path="libs/libsel4sync" revision="62c59dffd369110bd72317ed075bdeefed85fed0" upstream="master"/>
+  <project name="libsel4utils.git" path="libs/libsel4utils" revision="5183de58a12ed1e1ee58847de9946d996f797cfd" upstream="master"/>
+  <project name="libsel4vka.git" path="libs/libsel4vka" revision="bad8ea58dba392a5b99ab7f95b7b4261addea5dc" upstream="master"/>
+  <project name="libsel4vspace.git" path="libs/libsel4vspace" revision="ba2d5f5a3ff457c3819ce03125764ac6e61f341f" upstream="master"/>
+  <project name="libutils.git" path="libs/libutils" revision="01380b017d12dd1cec7ae7188726959d95b643e2" upstream="master"/>
+  <project name="python-capdl-tool.git" path="tools/python-capdl" remote="smaccm" revision="1bebaaa970e99b1a703ca3bfa12852f56865a2e9" upstream="dev_hyp"/>
+  <project name="seL4.git" path="kernel" remote="smaccm" revision="fb52c4f2397d2ae09a8f0d00a8056f88d26fcc38" upstream="arm_hyp"/>
+</manifest>
