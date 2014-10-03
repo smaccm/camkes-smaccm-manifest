@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/seL4/" name="seL4"/>
+  <remote fetch="." name="smaccm"/>
+  
+  <default remote="seL4" revision="master"/>
+  
+  <project name="camkes-apps-DARPA--devel.git" path="apps/DARPA" remote="smaccm" revision="4c9f429f7ab7634f09f31cc6eef5907bb8025c7f" upstream="master"/>
+  <project name="camkes-apps-dataport--devel.git" path="apps/dataport" revision="c5f0afbe0fe90b6c7a576888f2ee14303b2b518b" upstream="master"/>
+  <project name="camkes-apps-event--devel.git" path="apps/event" revision="2e7585e82d16d6b5b02413040817df48d8620633" upstream="master"/>
+  <project name="camkes-apps-simple--devel.git" path="apps/simple" revision="788f3b9f76fa1c0d590a409a055bb53ddc95755f" upstream="master"/>
+  <project name="camkes-tool.git" path="tools/camkes" remote="smaccm" revision="b27140c1d9d59d75a55cd392070050d24c1e7365" upstream="dev_hyp"/>
+  <project name="camkes.git" path="projects/camkes" remote="smaccm" revision="d877f97dde4b2f418bc2aa182b943fead9725503" upstream="smaccm">
+    <linkfile dest="Makefile" src="Makefile"/>
+    <linkfile dest="Kbuild" src="Kbuild"/>
+    <linkfile dest="Kconfig" src="Kconfig"/>
+    <linkfile dest="configs" src="configs"/>
+    <linkfile dest="README.md" src="../../tools/camkes/docs/index.md"/>
+    <linkfile dest="tests" src="tests"/>
+    <linkfile dest="libs/libsel4" src="../../kernel/libsel4"/>
+    <linkfile dest="libs/libsel4camkes" src="../../tools/camkes/libsel4camkes"/>
+    <linkfile dest="compile_all.sh" src="compile_all.sh"/>
+    <linkfile dest="apps/adder" src="apps/adder"/>
+    <linkfile dest="apps/dma-example" src="apps/dma-example"/>
+    <linkfile dest="apps/epit" src="apps/epit"/>
+    <linkfile dest="apps/exchangestring" src="apps/exchangestring"/>
+    <linkfile dest="apps/filter" src="apps/filter"/>
+    <linkfile dest="apps/keyboard" src="apps/keyboard"/>
+    <linkfile dest="apps/lockserver" src="apps/lockserver"/>
+    <linkfile dest="apps/multiclient" src="apps/multiclient"/>
+    <linkfile dest="apps/multiplier" src="apps/multiplier"/>
+    <linkfile dest="apps/mutex" src="apps/mutex"/>
+    <linkfile dest="apps/oneplacebuffer" src="apps/oneplacebuffer"/>
+    <linkfile dest="apps/prodcons" src="apps/prodcons"/>
+    <linkfile dest="apps/rotate" src="apps/rotate"/>
+    <linkfile dest="apps/socket" src="apps/socket"/>
+    <linkfile dest="apps/terminal" src="apps/terminal"/>
+    <linkfile dest="apps/testrpccall" src="apps/testrpccall"/>
+    <linkfile dest="apps/testrpcthreadsafe" src="apps/testrpcthreadsafe"/>
+    <linkfile dest="apps/uart" src="apps/uart"/>
+  </project>
+  <project name="capDL-tool.git" path="tools/capDL" revision="941c3d7d6df08213a06b5a08b77655a4618f58a5" upstream="master"/>
+  <project name="capdl-loader-app.git" path="apps/capdl-loader-experimental" revision="f4ad650d67cecf59a07fdf55762079d200863141" upstream="master"/>
+  <project name="common-tool.git" path="tools/common" revision="9ebf704c47a7a564829483fdf6e22b16a3846b4d" upstream="master"/>
+  <project name="elfloader-tool.git" path="tools/elfloader" revision="b14fedcc6967dba98ad34200a9ae72708b733aa2" upstream="master"/>
+  <project name="kbuild-tool.git" path="tools/kbuild" revision="820f7efb4fbceeb1d0223f48f34dacfe8378cfdb" upstream="master"/>
+  <project name="libcpio.git" path="libs/libcpio" revision="e0c1c9a0841b99277dea467d50bd2e83ad7a6989" upstream="master"/>
+  <project name="libelf.git" path="libs/libelf" revision="34b957883b281e6b32f2fa5bb19198306a77dda7" upstream="master"/>
+  <project name="libplatsupport.git" path="libs/libplatsupport" revision="dbb6ccf0ea749266fd8cb06a0cb259ed1defa9f8" upstream="master"/>
+  <project name="libsel4bench.git" path="libs/libsel4bench" revision="d06f2e0600290542bd1099fa817cc15f6c454310" upstream="master"/>
+  <project name="libsel4debug.git" path="libs/libsel4debug" revision="88c7a737c0b1e2c6c81bcc55b7be68d381e29d0f" upstream="master"/>
+  <project name="libsel4dma.git" path="libs/libsel4dma" remote="smaccm" revision="074ef75139afeae58feab6e6d62e3e5464ff1902" upstream="master"/>
+  <project name="libsel4muslcsys.git" path="libs/libsel4muslcsys" revision="cd42555e5069e8361662bc314a65eb6f0b6f3674" upstream="master"/>
+  <project name="libsel4muslcsys.git" path="libs/libsel4muslccamkes" revision="03077c550bec4f9fbd38ededc3bf8e00f0ba1e8d" upstream="camkes"/>
+  <project name="libsel4platsupport.git" path="libs/libsel4platsupport" revision="347e3e3e783d751aa33d51a165a5fc977e02f27b" upstream="master"/>
+  <project name="libsel4simple-default.git" path="libs/libsel4simple-default" revision="e3c4fd27fb3d675fefe4aa32274c7f1c48e7d4a2" upstream="master"/>
+  <project name="libsel4simple.git" path="libs/libsel4simple" revision="7f60b9be2673520ec71a5c270a7726286a5f93d0" upstream="master"/>
+  <project name="libsel4sync.git" path="libs/libsel4sync" revision="2ce7c56d6c59666008b62e95a0d3d84ec4db135c" upstream="master"/>
+  <project name="libsel4utils.git" path="libs/libsel4utils" revision="84ef8b39f34ab679bbcf7cc1afb7e1c6b3234d45" upstream="master"/>
+  <project name="libsel4vka.git" path="libs/libsel4vka" revision="cad2a21146a1678a1133f84f935ea685a1a0e443" upstream="master"/>
+  <project name="libsel4vspace.git" path="libs/libsel4vspace" revision="742bd59cd2bff3eaa4d0d12aa4a01d1b0d873707" upstream="master"/>
+  <project name="libutils.git" path="libs/libutils" revision="01380b017d12dd1cec7ae7188726959d95b643e2" upstream="master"/>
+  <project name="musllibc.git" path="libs/libmuslc" revision="6aa6001a2413db18f056daa14801e64c0c089e6f" upstream="sel4"/>
+  <project name="python-capdl-tool.git" path="tools/python-capdl" remote="smaccm" revision="1bebaaa970e99b1a703ca3bfa12852f56865a2e9" upstream="dev_hyp"/>
+  <project name="seL4.git" path="kernel" remote="smaccm" revision="911d135e2f9bcf8248e5fc55da7c929d740852e9" upstream="arm_hyp"/>
+</manifest>
