@@ -36,7 +36,7 @@
     <project name="camkes-apps-redis--devel.git" path="apps/redis"/>
     <project name="camkes-apps-bilbyfs--devel.git" path="apps/bilbyfs"/>
 
-    <project name="seL4.git" path="kernel" revision="staging"/>
+    <project name="seL4.git" path="kernel" revision="experimental"/>
 
     <project name="elfloader-tool.git" path="tools/elfloader"/>
     <project name="common-tool.git" path="tools/common"/>
