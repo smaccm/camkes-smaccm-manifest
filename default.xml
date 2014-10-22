@@ -64,6 +64,7 @@
     <project name="libsel4debug.git" path="libs/libsel4debug"/>
     <project name="libutils.git" path="libs/libutils"/>
     <project name="libsel4simple.git" path="libs/libsel4simple"/>
+    <project name="libsel4simple-stable.git" path="libs/libsel4simple-stable"/>
     <project name="libsel4simple-default.git" path="libs/libsel4simple-default"/>
     <project name="libsel4bench.git" path="libs/libsel4bench"/>
     <project name="libsel4bga.git" path="libs/libsel4bga"/>
