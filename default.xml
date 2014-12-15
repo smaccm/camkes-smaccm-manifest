@@ -12,6 +12,14 @@
 
 <manifest>
     <remote name="seL4"
+        fetch="../seL4"
+    />
+
+    <remote name="sched"
+        fetch="../alyons"
+    />
+
+    <remote name="ikuz"
         fetch="."
     />
 
@@ -29,21 +37,24 @@
     <project name="camkes-apps-event--devel.git" path="apps/eventnative" revision="native-connector"/>
     <project name="camkes-apps-dataport--devel.git" path="apps/dataport"/>
     <project name="camkes-apps-smartmeter--devel.git" path="apps/smartmeter"/>
+
+<!--
     <project name="capdl-loader-app.git" path="apps/capdl-loader-experimental"/>
+-->
     <project name="camkes-apps-DARPA--devel.git" path="apps/DARPA"/>
     <project name="camkes-apps-filesystem--devel.git" path="apps/filesystem"/>
     <project name="camkes-apps-microbench--devel.git" path="apps/microbench"/>
     <project name="camkes-apps-redis--devel.git" path="apps/redis"/>
     <project name="camkes-apps-bilbyfs--devel.git" path="apps/bilbyfs"/>
 
-    <project name="seL4.git" path="kernel" revision="experimental"/>
-
     <project name="elfloader-tool.git" path="tools/elfloader"/>
     <project name="common-tool.git" path="tools/common"/>
     <project name="kbuild-tool.git" path="tools/kbuild"/>
+<!--
     <project name="camkes-tool.git" path="tools/camkes" revision="development"/>
     <project name="capDL-tool.git" path="tools/capDL"/>
     <project name="python-capdl-tool.git" path="tools/python-capdl" revision="development"/>
+-->
     <project name="pruner.git" path="tools/pruner"/>
 
     <project name="musllibc.git" path="libs/libmuslc" revision="sel4"/>
@@ -53,10 +64,8 @@
     <project name="libplatsupport.git" path="libs/libplatsupport"/>
     <project name="libcpio.git" path="libs/libcpio"/>
     <project name="libelf.git" path="libs/libelf"/>
-    <project name="libsel4utils.git" path="libs/libsel4utils"/>
     <project name="libsel4sync.git" path="libs/libsel4sync"/>
     <project name="libsel4vspace.git" path="libs/libsel4vspace"/>
-    <project name="libsel4vka.git" path="libs/libsel4vka"/>
     <project name="liblwip-socket.git" path="libs/liblwip"/>
     <project name="libethdrivers.git" path="libs/libethdrivers"/>
     <project name="libsdhcdrivers.git" path="libs/libsdhcdrivers"/>
@@ -72,7 +81,23 @@
     <project name="libringbuffer.git" path="libs/libringbuffer"/>
     <project name="libredis.git" path="libs/libredis"/>
 
-    <project name="camkes.git" path="projects/camkes" revision="development">
+    <!-- forked repos: sched -->
+    <project remote="sched" name="libsel4allocman.git" path="libs/libsel4allocman" revision="rt"/>
+    <project remote="sched" name="seL4.git" path="kernel" revision="rt" />
+    <project remote="sched" name="libsel4utils.git" path="libs/libsel4utils" revision="rt"/>
+    <project remote="sched" name="libsel4sched.git" path="libs/libsel4sched"/>
+    <project remote="sched" name="libsel4vka.git" path="libs/libsel4vka" revision="rt"/>
+
+    <!-- new CAmkES scheduling context repos -->
+    <project remote="ikuz" name="camkes-apps-sc--devel.git" path="apps/sc" revision="master"/> 
+
+    <!-- forked repos: ikuz -->
+    <project remote="ikuz" name="capdl-loader-app.git" path="apps/capdl-loader-experimental" revision="schedcontext"/>
+    <project remote="ikuz" name="camkes-tool.git" path="tools/camkes" revision="schedcontext"/>
+    <project remote="ikuz" name="capDL-tool.git" path="tools/capDL" revision="schedcontext"/>
+    <project remote="ikuz" name="python-capdl-tool.git" path="tools/python-capdl" revision="schedcontext"/>
+
+    <project remote="ikuz" name="camkes.git" path="projects/camkes" revision="schedcontext">
         <!-- symlinks to make the project structure fit the build system -->
         <linkfile src="Makefile" dest="Makefile"/>
         <linkfile src="Kbuild" dest="Kbuild"/>
