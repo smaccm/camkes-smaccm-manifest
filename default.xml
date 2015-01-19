@@ -32,7 +32,7 @@
 <!--
     <project name="capdl-loader-app.git" path="apps/capdl-loader-experimental"/>
 -->
-    <project name="camkes-apps-DARPA--devel.git" path="apps/DARPA"/>
+    <project remote="smaccm" name="camkes-apps-DARPA--devel.git" path="apps/DARPA"/>
 
     <project name="elfloader-tool.git" path="tools/elfloader"/>
     <project name="common-tool.git" path="tools/common"/>
