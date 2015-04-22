@@ -37,9 +37,9 @@
     <project name="elfloader-tool.git" path="tools/elfloader"/>
     <project name="common-tool.git" path="tools/common"/>
     <project name="kbuild-tool.git" path="tools/kbuild"/>
-    <project name="camkes-tool.git" path="tools/camkes" revision="dev_hyp" remote="smaccm"/>
+    <project name="camkes-tool.git" path="tools/camkes"/>
     <project name="capDL-tool.git" path="tools/capDL"/>
-    <project name="python-capdl-tool.git" path="tools/python-capdl" revision="dev_hyp" remote="smaccm"/>
+    <project name="python-capdl-tool.git" path="tools/python-capdl"/>
 
     <project name="musllibc.git" path="libs/libmuslc" revision="sel4"/>
     <project name="libsel4muslcsys.git" path="libs/libsel4muslcsys" revision="master"/>
