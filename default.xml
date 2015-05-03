@@ -28,7 +28,9 @@
     <project name="camkes-apps-event--devel.git" path="apps/event" revision="master"/>
     <project name="camkes-apps-simple--devel.git" path="apps/simple" revision="master"/>
 
-    <project name="camkes-apps-DARPA--devel.git" path="apps/DARPA" remote="smaccm"/>
+    <project name="camkes-apps-DARPA--devel.git" path="projects/DARPA" remote="smaccm">
+	<linkfile src="apps/DARPA" dest="apps/DARPA"/>
+    </project>	
 
     <project name="capdl-loader-app.git" path="apps/capdl-loader-experimental"/>
 
