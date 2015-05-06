@@ -30,6 +30,9 @@
 
     <project name="camkes-apps-DARPA--devel.git" path="projects/DARPA" remote="smaccm">
 	<linkfile src="apps/DARPA" dest="apps/DARPA"/>
+        <linkfile src="apps/timer_kzm" dest="apps/timer_kzm"/>
+        <linkfile src="apps/timer_sabre" dest="apps/timer_sabre"/>
+        <linkfile src="apps/timer_odroid" dest="apps/timer_odroid"/>
     </project>	
 
     <project name="capdl-loader-app.git" path="apps/capdl-loader-experimental"/>
