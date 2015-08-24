@@ -37,12 +37,19 @@
 
     <project name="capdl-loader-app.git" path="apps/capdl-loader-experimental"/>
 
-    <project name="seL4.git" path="kernel" revision="arm_hyp" remote="smaccm"/>
+    <project name="seL4.git" path="kernel" revision="arm_hyp" remote="smaccm">
+        <linkfile src="libsel4" dest="libs/libsel4"/>
+    </project>
 
     <project name="elfloader-tool.git" path="tools/elfloader"/>
     <project name="common-tool.git" path="tools/common"/>
     <project name="kbuild-tool.git" path="tools/kbuild"/>
-    <project name="camkes-tool.git" path="tools/camkes"/>
+    <project name="camkes-tool.git" path="tools/camkes">
+ 	<linkfile src="toplevel.mk" dest="Makefile"/>
+        <linkfile src="Kbuild" dest="Kbuild"/>
+        <linkfile src="libsel4camkes" dest="libs/libsel4camkes"/>
+        <linkfile src="docs/index.md" dest="README.md"/>
+    </project>
     <project name="capDL-tool.git" path="tools/capDL"/>
     <project name="python-capdl-tool.git" path="tools/python-capdl"/>
 
@@ -66,19 +73,9 @@
     <project name="libsel4dma.git" path="libs/libsel4dma" remote="smaccm"/>
 
     <project name="camkes.git" path="projects/camkes" revision="smaccm" remote="smaccm">
-        <!-- symlinks to make the project structure fit the build system -->
- 	<linkfile src="../../tools/camkes/toplevel.mk" dest="Makefile"/>
-        <linkfile src="../../tools/camkes/Kbuild" dest="Kbuild"/>
-        <!-- 
-	<linkfile src="Makefile" dest="Makefile"/>
-        <linkfile src="Kbuild" dest="Kbuild"/>
-	-->
         <linkfile src="Kconfig" dest="Kconfig"/>
         <linkfile src="configs" dest="configs"/>
-        <linkfile src="../../tools/camkes/docs/index.md" dest="README.md"/>
         <linkfile src="tests" dest="tests"/>
-        <linkfile src="../../kernel/libsel4" dest="libs/libsel4"/>
-        <linkfile src="../../tools/camkes/libsel4camkes" dest="libs/libsel4camkes"/>
         <linkfile src="compile_all.sh" dest="compile_all.sh"/>
         <linkfile src="apps/adder" dest="apps/adder"/>
         <linkfile src="apps/dma-example" dest="apps/dma-example"/>
